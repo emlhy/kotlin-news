@@ -1,7 +1,8 @@
-package com.emlhy.kotlinnews
+package com.emlhy.kotlinnews.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.emlhy.kotlinnews.R
 
 class MainActivity : AppCompatActivity() {
 
