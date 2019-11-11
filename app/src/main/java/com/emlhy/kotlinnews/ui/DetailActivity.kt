@@ -3,6 +3,7 @@ package com.emlhy.kotlinnews.ui
 import android.os.Build
 import android.os.Bundle
 import android.text.Html
+import android.text.method.LinkMovementMethod
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.emlhy.kotlinnews.R
@@ -29,6 +30,12 @@ class DetailActivity : AppCompatActivity() {
 
         detail_title.text = title
         detail_body.text = body
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+//            Html.fromHtml(Html.fromHtml(body, Html.FROM_HTML_MODE_COMPACT).toString(), Html.FROM_HTML_MODE_COMPACT)
+//        } else {
+//            Html.fromHtml(Html.fromHtml(body).toString())
+//        }
+//        detail_body.movementMethod = LinkMovementMethod.getInstance()
         if (imageUrl != null && imageUrl.isNotEmpty()) {
             Picasso.get().load(imageUrl).into(detail_image, object: Callback {
                 override fun onSuccess() {

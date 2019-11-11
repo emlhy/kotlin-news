@@ -44,6 +44,7 @@
             android:layout_marginBottom="@dimen/margin_8"
             android:paddingStart="@dimen/margin_24"
             android:paddingEnd="@dimen/margin_24"
+            android:textColor="@android:color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
